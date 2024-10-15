@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euler Passos Buffet</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+  <!-- Bootstrap core CSS -->
+  <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+<body>
+    <header>
+        <h1>Euler Passos Buffet</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="{% url 'index' %}">Início</a></li>
+                <li><a href="{% url 'sobre' %}">Sobre</a></li>
+                <li><a href="{% url 'servicos' %}">Serviços</a></li>
+                <li><a href="{% url 'contato' %}">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    {% block principal %}
+    <article class="fundo">
+            <div class="conteiner">
+                <h1>Área de Atuação</h1>
+                <div class="conteudo">
+                    <img src="/static/imagens/evento.jpg" height="500" width="auto" id="img" alt="Foto Buffet">
+                    <p id="texto">
+                        A área de atuação é em eventos no geral, jantas, almoços e churrascos, você pode fazer seu orçamento ou pelo site ou pelo whatsapp do Próprio Euler, o local de atuação é no Distrito Federal(DF) e no entorno, também temos cárdapios próprios para eventos especiais, mas pode ser personalizado à gosto do cliente. 
+                    </p>
+                </div>
+            </div>
+            <div class="conteiner">
+                <h1>História da Empresa</h1>
+                <div class="conteudo">
+                    <img src="/static/imagens/euler.jpg" height="500" id="img" alt="Foto Buffet">
+                    <p id="texto">Tudo começou em 1998 quando o dono da empresa Euler Passos foi fazer um churrasco para seus chefes no local onde trabalhava (TRF), ele não tinha materiais e foi só com a mão de obra, e então os donos do evento gostaram e deram a ideia para ele começar a fazer eventos e abrir uma empresa de Buffet, então foi assim que foi criado a empresa Euler Passos Buffet, após essa estreia Euler adicionou mais alguns cardápios além de churrasco.</p>
+                </div>
+            </div>
+    </article>
+    {% endblock %}
+    <footer class="pt-5 my-5 text-muted border-top text-center">
+        Projeto Buffet - Pedro e Igor
+    </footer>
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
